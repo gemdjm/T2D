@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id = "com.gemstep.T2D"
+	version   = "0.0.2" 
+	versionCode ="2" >
+    <name>T2D</name>
+
+    <description>app T2D</description>
+	<icon src="icon.png" />
+	<preference name="permissions" value="none"/>
+
+    <author href="www.gemstep.com" email="appT2D@gemstep.com">
+       Dave Moore 
+    </author>
+
+</widget>

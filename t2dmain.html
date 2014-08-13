@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>DoGet</title>
+<link rel="stylesheet" href="main.css" type="text/css" />
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="subs.js"></script>
+</head>
+<body>
+  <div id="divAll">
+ 	<div id="divTop" >
+  		<img src="img/sort.jpg" alt="Sort" title="Sort" onclick="sortItems()" />
+		<img src="img/clear.png" alt="Clear" title="Clear" onclick="clearColours()" />
+		<img src="img/all.jpg" alt="All" title="All" onclick="setAllItemsYellow()" />
+		<img src="img/edit.png" alt="Edit" title="Edit" onclick="setEditMode()" />
+		<img src="img/new.png" alt="New" title="New" onclick="setNewMode()" />
+		<img src="img/down.png" alt="Hide" title="Hide" onclick="setHideMode()" id="imgHide" />
+		<img src="img/up.png" alt="Show" title="Show" onclick="setShowMode()" />
+		<img src="img/help.png" alt="Help" title="Help" onclick="showHelp()" />
+		<br />
+		<span id="lblMsg" >&nbsp;</span>
+	</div>
+<!-- <img src="img/red1x1.gif" height="2" width="480" /> -->
+	<div id="divMain">
+	</div>
+
+	<div id="divHelper" onclick="showMainDisplay()">
+
+		<h2>DoGet <img src="img/colours.png" height="30px" alt="colours" /></h2>
+		<hr />
+
+		<div id="divOverview" >
+			<p><b>DoGet</b> helps you remember the things you want to get or do, using colour coding and sorting.</p>
+			<p>Items "to get" are coloured yellow, "got" items are green; unwanted items are white.</p>
+		</div>
+		<hr />
+
+		<div id="divHow" >
+			<h4>How to use it</h4>
+			<ol>
+				<li>If necessary, tap the "Clear" (brush) icon 
+					<img src="img/clear.png" class="help" alt="Clear" />
+					to reset all items to white.</li>
+				<li>Tap a wanted item to turn it yellow. Repeat for other wanted items.</li>
+				<li>Tap the "Sort" icon 
+					<img src="img/sort.jpg" class="help" alt="Sort" /> 
+					- the yellow wanted items will appear above the white unwanted items.</li>
+				<li>When you've got an item, tap that row to change it from yellow to green, and tap "Sort"  
+					- the yellow items appear first, then green, then white. </li>
+			</ol>
+			<p class="centre">
+				1. <img src="img/1.png" height="80px" alt="1" /> &nbsp;
+				2. <img src="img/2.png" height="80px" alt="2" /> &nbsp;
+				3. <img src="img/3.png" height="80px" alt="3" /> &nbsp;
+				<!--4. <img src="img/4.png" height="80px" alt="4" /> &nbsp;-->
+			</p>
+		</div>
+		<hr />
+
+		<div id="divOther" >
+			<h4>Editing</h4>
+<p>You can change any item caption: tap the "Edit" icon <img src="img/edit.png" class="help" alt="Edit" />,
+then tap the item to be changed.</p>
+<p>Tap <img src="img/all.jpg" class="help" alt="All" /> to turn all items yellow.</p> 
+<p>Tap <img src="img/clear.png" class="help" alt="Clear" /> to turn all items white.</p> 
+<p>Tap <img src="img/new.png" class="help" alt="New" /> to add a new item.</p> 
+<p>Tap <img src="img/down.png" class="help" alt="Hide" /> to hide items from the list.</p> 
+<p>Tap <img src="img/up.png" class="help" alt="Show" /> to restore hidden items to the list.</p> 
+		</div>
+		<hr />
+(Tap to close this help page)
+	</div>	
+
+ <div id="divEdit" >
+  <br />
+  <input type="text" id="txtEdit" />
+  <br /><br />
+  <input type="button" id="btnSaveEdit" value="Save" onclick="saveEditedItem()" class="btn" />
+  <input type="button" id="btnCancelEdit" value="Cancel" onclick="cancelEdit()" class="btn" />
+ </div>
+
+ <div id="divShow" >
+  <br />
+  <input type="text" id="txtShow" onkeyup="findMatchingItems()" />
+  <br />
+  <div id="divShowItems"></div>
+  <br />
+  <input type="button" id="btnCancelShow" value="Cancel" onclick="cancelShow()" class="btn" />
+ </div>
+
+ </div>
+</body>
+</html>

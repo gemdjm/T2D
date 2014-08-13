@@ -1,0 +1,30 @@
+body		{ font-family: Verdana, Arial; background-color: Black; color: Silver; }
+h1, h2		{ font-family: TimesNewRoman, serif; margin:10px; }
+h4		{ margin: 5px; }
+hr		{ margin: 0px; border-color: gray; }
+li		{ margin-bottom: 5px; }
+
+.btn		{ width: 40%; }
+.centre		{ text-align: center; }
+.TBC		{ background-color: khaki; color: brown; padding: 2px; margin: 3px; }
+.active		{ border: solid 4px yellow; }
+.help		{ width: 20px; height: 20px; }
+
+#divTop img	{ height 35px; width: 35px; margin-right: 12px; margin-bottom: 10px; }
+#divMain div	{ border-bottom: solid 1px gray; padding: 10px; border-bottom: solid 10px #eee;
+			background-color: White; color: Black; font-size: larger; }
+
+#divHelper	{ position: absolute; top: 0px; left: 0px; height: auto; width: auto; padding:10px; z-index:5;
+			background-color: Black; color: White; display: none; text-align: center; }
+#divHelper div	{ text-align: left; width: 90%; padding: 10px; margin: 0px; }
+
+#divEdit	{ position: absolute; top: 20px; height: 70%; left: 10%; width: 75%; padding: 10px; z-index: 5; text-align: center;
+			background-color: Black; color: White; display: none; border: solid 1px gray; margin: 2px;  }
+#divEdit .btn	{ height: 15%; margin: 10px; width: 40%; font-size: larger; }
+#txtEdit	{ width: 85%; height: 10%; padding: 0px; }
+
+#divShow	{ position: absolute; top: 20px; height: 70%; left: 10%; width: 75%; padding: 10px; z-index: 5; text-align: center;
+			background-color: Black; color: White; display: none; border: solid 1px gray; margin: 2px;  }
+#divShow .btn	{ height: 15%; margin: 10px; width: 40%; font-size: larger; }
+#txtShow	{ width: 85%; height: 10%; padding: 0px; }
+

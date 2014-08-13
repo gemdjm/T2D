@@ -1,0 +1,113 @@
+
+@media only screen and (orientation: landscape) {
+#introPage	{ position: absolute; left: 0px; top: 0px; width: 550px; height: 320px;  }
+#indexPage	{ position: absolute; left: 20px; top: 10px; width: 510px; height: 320px;  }
+#mainPage	{ position: absolute; left: 0px; top: 0px; width: 550px; height: 320px; z-index:1; }
+}
+
+@media only screen and (orientation: portrait) {
+#introPage	{ position: absolute; left: 0px; top: 0px; width: 320px; height: 550px;  }
+#indexPage	{ position: absolute; left: 10px; top: 5px; width: 300px; height: 550px;  }
+#mainPage	{ position: absolute; left: 0px; top: 0px; width: 320px; height: 550px; z-index:1;  }
+}
+
+body				{ font-family: Droid Sans, Verdana, Arial; height: 100%; width:100%; margin: 0; padding: 0; background-color:black; }		
+/* background-color: #cfc; */
+/* background-image:url("img/autumn.jpg"); background-repeat: repeat-y; background-size: cover; */
+
+html				{ height: 100%; width:100%; margin: 0; padding: 0; }
+#overall			{ position:relative; z-index:1; }
+
+#bg				{ position:fixed; top:0; left:0; width:100%; height:100%; } 
+
+Xdiv				{ border: solid 2px #ccc; }		/* debug */
+
+.Xheader			{ background-color: #cfc; color: #393; border: solid 2px #393; 
+						border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; 
+						text-align: center; vertical-align: middle; margin: 0px; }
+.header h1		{ padding: 0px; text-shadow: 0.1em 0.1em #aaa; margin: 3px 0px;
+						font-size: 25px;	font-family: Droid Sans, Verdana, Arial; }
+.logo				{ height: 50px; }				
+content			{ background-color: #cfc; text-align:center; }
+p					{ margin: 5px 10px }
+
+.subjectIndex td			{ padding: 3px 0px; text-align: center; }
+.subjectIndex input		{ padding: 10px; }
+.bar				{ margin: 0px; padding: 0px; }
+.Xprogress		{ border: solid 1px silver; height: 20px; margin: 0px; padding: 0px; }
+
+.popup			{ position: absolute; top: 30px; left: 5px; width: 290px; height:290px; padding: 5px; 
+						background-color: #393; color: #cfc; border: solid 2px white;  
+						border-radius: 25px; -webkit-border-radius: 25px; -moz-border-radius: 25px; 
+						font-family: Droid Sans, Verdana, Arial; font-size: 16px; }
+						
+.closer			{ font-size: 12px; background-color: gray; padding: 5px; float: right;}
+.big				{ padding: 10px 30px; vertical-align: middle; }
+.btn				{ padding: 10px 15px; vertical-align: middle; background-color: #393; color: #cfc; 
+						border-radius: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px; 
+					}
+.btnIntro		{ padding: 7px; margin: 0px; vertical-align: top; background-color: #393; color: #cfc; 
+						border-radius: 12px; -webkit-border-radius: 12px; -moz-border-radius: 12px; 
+					}
+.info				{ padding: 10px 5px; vertical-align: middle; }
+.centre			{ text-align: center; vertical-align: middle;  }
+.middle			{ vertical-align: middle;  }
+.Xintro			{ text-align: center; padding: 10px; }
+.q					{ margin: 0px border: vertical-align: bottom; solid 2px #393; }
+.silver			{ color: Silver; }
+.emerald			{ background-color: #393; }
+.jade				{ background-color: #cfc; }
+.OK				{ color:#393; background-color: #cfc; border: solid 1px white; width:15%; text-align:center; 
+						position:relative; left:60%; padding: 5px; }
+.infoNote p		{ margin: 20px; }
+
+#introPage		{ background-color: #cfc; text-align: center;
+						border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
+#indexPage		{ background-color: #F5DEB3; text-align: center;
+						border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
+
+#XmainPage		{ background-color: #cfc; text-align: center;
+						border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
+#mainPage		{ text-align: center; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
+
+/* --#mainHeader, #mainGap1, #divProgress, #mainGap2, #divQuestion		{ background-color: #cfc; } */
+#divTop			{ width:80%; background-color:#f0e600; border-radius: 30px; -webkit-border-radius: 25px; -moz-border-radius: 15px; }
+#divNotes		{ width:100%; background-color:black; color:White; text-align:left; padding: 20px;
+						border-radius: 30px; -webkit-border-radius: 25px; -moz-border-radius: 15px; }
+#divNotes p		{ margin-bottom: 10px; }
+#h1Title			{ padding-top: 15px; }
+#h1Title td		{ vertical-align:middle; }
+#imgLogo			{ margin: 0; padding: 0; }						
+#spnSubject		{  vertical-align: top; }
+#divControls	{ position: absolute; top: 70px; height: 60px; width: 320px; vertical-align: middle;  }
+
+#divQuestion	{ position: absolute; top: 0px; height: 60px; width: 320px;	background-color: yellow;
+	 border-radius: 30px; -webkit-border-radius: 25px; -moz-border-radius: 15px;}
+#spnQuestionText		{ font-size: 24px; vertical-align: middle; margin-top: 20px; }
+#imgQuestion	{ border: solid 1px silver; vertical-align: middle; }
+#divAnswers		{ position: absolute; top: 60px; height: 250px; width: 320px;		 }
+#divResultsText h3	{ margin: 0px; text-align:left; font-size: 12pt;}
+#xdivResultsText li	{ font-size: 16pt; text-align:left; }
+
+#divDeb			{ position: absolute; top:450px; left:0px; height:100px; width:320px; }
+
+#imgMap			{ border: solid 1px #393; }
+#divDebug		{ position: absolute; top: 400px; height: 50px; width: 320px; }
+
+#imgSmiley		{ margin: 0px 5px;  vertical-align: middle; border: solid 2px #393; }
+
+#indexContent td	{ align: left; }
+#indexContent li	{ margin: 10px; padding: 10px 0px 0px 0px; border: solid 1px #393; font-size: 24px; list-style: none; 
+						vertical-align: middle; background-color: #dfd;
+						border-radius: 30px; -webkit-border-radius: 25px; -moz-border-radius: 15px; }
+
+#mainList		{ margin: 0; padding: 0; }
+#mainList li	{ border: solid 1px silver; font-size: 24px; list-style: none; background-color: khaki;	/* was #dfd */
+						margin: 5px 0px; padding: 10px 0px 0px 0px; text-align:centre;
+						border-radius: 20px; -webkit-border-radius: 25px; -moz-border-radius: 15px; }
+
+#divProgress	{ padding: 0px 20px;  }
+#tblProgress th { height: 5px; border: solid 1px silver; width:10%; }
+
+#indexTable td img { width: 80px; }
+
